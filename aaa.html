@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<a id="anchor" href="http://opentutorials.org">oepntutorials</a>
 <ul>
   <li>HTML</li>
   <li>css</li>
-  <li id="active">javascript</li>
+  <li id="list">javascript</li>
 </ul>
+<input type = "button" id="button" value="button" />
   <script type>
-    var li = document.getElementById('active');
-    console.log(li.constructor.name); //HTMLElement
-    var lis = document.getElementsByTagName('li');
-    console.log(lis.constructor.name);  //htmlCollection 유사배
+    var target = document.getElementById('list');
+    console.log(target.constructor.name); //HTMLLIElement
+
+    var target = document.getElementById('anchor');
+    console.log(target.constructor.name); //HTMLAnchorElement
+
+    var target = document.getElementById('button');
+    console.log(target.constructor.name); //HTMLInputElement
+
   </script>
   </script>
 </html>
